@@ -1,0 +1,17 @@
+pkgname=ui-themes
+pkgver=1.0
+pkgrel=1
+pkgdesc='Un tema Flat Gtk + basado en Arc'
+url="https://github.com/Killer-OS-Oficial/Killer-OS-Themes"
+arch=("any")
+groups=('killer-os')
+license=("GPL2")
+optdepends=("gtk-engine-murrine" "gtk-engines")
+source=("git+${url}.git")
+sha256sums=('SKIP')
+
+package() {
+  cd Killer-OS-Themes/ui-themes/ || return
+  mkdir -p "${pkgdir}/usr/share/themes"
+  cp -rf *ui "${pkgdir}/usr/share/themes"
+}
