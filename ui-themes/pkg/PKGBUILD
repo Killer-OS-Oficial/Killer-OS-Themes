@@ -1,6 +1,6 @@
 pkgname=ui-themes
 pkgver=1.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Un tema Flat Gtk + basado en Arc'
 url="https://github.com/Killer-OS-Oficial/Killer-OS-Themes"
 arch=("any")
